@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.ropikin.eikos"
+        minSdk 22
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.6'
+    implementation 'com.google.firebase:firebase-firestore:24.2.0'
+    implementation 'androidx.room:room-common:2.4.2'
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.11'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    //library arc toolbar
+
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375217197354",
+    "project_id": "eikos-2fbd9",
+    "storage_bucket": "eikos-2fbd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375217197354:android:b6d437ee76be9c28ff8e53",
+        "android_client_info": {
+          "package_name": "com.ropikin.eikos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375217197354-ds3kqor7igb6tf095qkhd8huv4k7ilqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWbRi6M5OgAvyi7e1Ou0hPCWrIjDGyJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375217197354-ds3kqor7igb6tf095qkhd8huv4k7ilqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
